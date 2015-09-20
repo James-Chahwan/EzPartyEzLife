@@ -1,0 +1,49 @@
+﻿@model IEnumerable<ezpartyezLife.Models.userPaid>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.party.eventID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FBID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.haspaid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ammount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.party.AdminID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FBID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.haspaid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ammount)
+        </td>
+        <td>
+           @Html.ActionLink("pay with your paypal", "index", "Paypal") |
+        </td>
+    </tr>
+}
+
+</table>

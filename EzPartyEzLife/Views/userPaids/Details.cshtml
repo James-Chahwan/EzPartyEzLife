@@ -1,0 +1,50 @@
+﻿@model ezpartyezLife.Models.userPaid
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>userPaid</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.party.AdminID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.party.AdminID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FBID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FBID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.haspaid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.haspaid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ammount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ammount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
