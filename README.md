@@ -11,7 +11,9 @@ I built this app concept(for now) at the hackagong competition, the general idea
 4. everyones payed and you recieve the money and you then make the party happen.
 
 
-things to add later
+things to add later.
+
+
 1. payout options
 2. party packages
 3. delivery options straight to the party host.
